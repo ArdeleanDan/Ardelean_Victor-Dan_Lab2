@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Ardelean_Victor_Dan_Lab2.Data
 {
-    public class LibraryIdentityContext : IdentityDbContext
+    public class LibraryIdentity2Context : IdentityDbContext
     {
-        public LibraryIdentityContext(DbContextOptions<LibraryIdentityContext> options)
+        public LibraryIdentity2Context(DbContextOptions<LibraryIdentity2Context> options)
             : base(options)
         {
         }
