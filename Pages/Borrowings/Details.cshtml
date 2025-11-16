@@ -1,0 +1,41 @@
+﻿@page
+@model Ardelean_Victor_Dan_Lab2.Pages.Borrowings.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Borrowing Details</h1>
+
+<div>
+    <h4>Borrowing</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Member
+        </dt>
+        <dd class="col-sm-10">
+            @(Model.Borrowing.Member.LastName + " " + Model.Borrowing.Member.FirstName)
+        </dd>
+
+        <dt class="col-sm-2">
+            Book
+        </dt>
+        <dd class="col-sm-10">
+            @(Model.Borrowing.Book.Title + " - " +
+                        Model.Borrowing.Book.Author.LastName + " " + Model.Borrowing.Book.Author.FirstName)
+        </dd>
+
+        <dt class="col-sm-2">
+            Return Date
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Borrowing.ReturnDate)
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Borrowing.ID" class="btn btn-primary">Edit</a> |
+    <a asp-page="./Index" class="btn btn-secondary">Back to List</a>
+</div>

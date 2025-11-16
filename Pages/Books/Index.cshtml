@@ -49,7 +49,7 @@
             @Html.DisplayFor(modelItem => item.Title)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Author)
+             @(item.Author?.LastName + " " + item.Author?.FirstName)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Price)
