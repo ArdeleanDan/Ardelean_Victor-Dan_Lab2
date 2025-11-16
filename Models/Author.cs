@@ -1,4 +1,6 @@
-﻿namespace Ardelean_Victor_Dan_Lab2.Models
+﻿using Microsoft.EntityFrameworkCore.Metadata;
+
+namespace Ardelean_Victor_Dan_Lab2.Models
 {
     public class Author
     {
@@ -6,5 +8,7 @@
         public string FirstName { get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;
         public ICollection<Book>? Books { get; set; }
+
+
     }
 }
