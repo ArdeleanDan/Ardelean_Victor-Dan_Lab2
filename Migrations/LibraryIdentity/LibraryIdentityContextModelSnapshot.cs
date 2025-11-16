@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Ardelean_Victor_Dan_Lab2.Migrations.LibraryIdentity
 {
-    [DbContext(typeof(LibraryIdentityContext))]
+    [DbContext(typeof(LibraryIdentity2Context))]
     partial class LibraryIdentityContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
